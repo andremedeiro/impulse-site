@@ -114,7 +114,7 @@ function changeMenuIcon() {
 
 // SCROLL COM LINK
 
-const linkItems = document.querySelectorAll(".nav-link, #telaInicial a");
+const linkItems = document.querySelectorAll(".nav-link, #telaInicial a, #logo-navbar");
 
 linkItems.forEach(item => {
     item.addEventListener('click', scrollToIdOnClink);
