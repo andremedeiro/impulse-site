@@ -1,0 +1,162 @@
+/*
+* @author André Medeiros
+* @version 0.1
+*/
+
+/* ------------------------------ GLOBAL ------------------------------*/
+
+
+html {
+	font-size: 62.5%;
+}
+
+html, body{
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+
+	width: 100%;
+	height: 100%;
+
+	font-family: "Sansation Regular";
+
+	color: rgb(16, 24, 32);
+	background: rgb(229,225,230);
+}
+
+body {
+	font-size: 1.5rem;
+	overflow-x: hidden;
+}
+
+section, footer {
+
+	scroll-snap-align: center;
+
+	width: 100vw;
+	height: 100vh;
+
+}
+
+*:focus {
+	outline: none !important;
+}
+
+.destaqueFrase {
+	color: rgb(229,225,230);
+	background: rgb(228,0,43);
+	padding: 0px 2px;
+	line-height: 5rem;
+}
+
+.botao-chamada {
+	color: rgb(228,0,43);
+	border: 1px solid rgb(228,0,43);
+	background: transparent;
+	transition: all 0.3s;
+	text-decoration: none;
+}
+
+.botao-chamada:hover {
+	color: rgb(229,225,230);
+	background: rgb(228,0,43);
+}
+
+h1 {
+	font-family: "Sansation Bold";
+	font-size: 7.2rem;
+}
+
+h2 {
+	font-family: "Sansation Bold";
+	font-size: 3.5rem;
+}
+
+h3 {
+	font-size: 1.8rem;
+	font-family: "Sansation Light";
+	color: #5A4D5D;
+}
+
+h4 {
+	font-size: 1.8rem;
+	font-family: "Sansation Bold";
+	color: rgb(16, 24, 32);
+}
+
+h5 {
+	font-size: 1.7rem;
+	font-family: "Sansation Bold";
+	color: rgb(16, 24, 32);
+}
+
+h6 {
+	font-size: 1.2rem;
+	color: #5A4D5D;
+}
+
+p {
+	font-size: 1.3rem;
+	color: rgb(16, 24, 32);
+}
+
+
+@font-face {
+font-family: "Sansation Regular";
+src: url("../util/fonts/sansation_regular-webfont.woff") format("woff"),
+url("../util/fonts/sansation_regular-demo.html") format("html");
+}
+
+@font-face {
+font-family: "Sansation Bold";
+src: url("../util/fonts/sansation_bold-webfont.woff") format("woff"),
+url("../util/fonts/sansation_bold-demo.html") format("html");
+}
+
+@font-face {
+font-family: "Sansation Light";
+src: url("../util/fonts/sansation_light-webfont.woff") format("woff"),
+url("../util/fonts/sansation_light-demo.html") format("html");
+}
+
+/* ------------------------------ BOTÃO CHAT ----------------------------- */
+
+#botao-chat {
+	height: 50px;
+	width: 50px;
+	bottom: 3%;
+	right: 4%;
+	position: fixed;
+	cursor: pointer;
+	z-index: 2;
+}
+
+/* ------------------------------ SETA ----------------------------- */
+
+@keyframes animation-seta{
+	0%  {bottom: 10px;}
+	40%  {bottom: 17px;}
+	50%  {bottom: 10px;}
+	60%  {bottom: 14px;}
+	70%  {bottom: 10px;}
+	80%  {bottom: 12px;}
+	85%  {bottom: 10px;}
+	90%  {bottom: 11px;}
+	95%  {bottom: 10px;}
+}
+
+#seta {
+	height: 30px;
+	width: 30px;
+	position: fixed;
+	bottom: 10px;
+	left: calc(50vw - 15px);
+	z-index: 2;
+	animation-name: animation-seta;
+	animation-delay: 15s;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+
+#seta>path {
+	fill: rgba(16, 24, 32, 0.3);
+}

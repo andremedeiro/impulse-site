@@ -1,0 +1,475 @@
+/*
+* @author André Medeiros
+* @version 0.1
+*/
+
+/* ------------------------------ RESPONSIVO ----------------------------- */
+
+@media screen and (max-width: 1199px) {
+    html {
+        font-size: 55%
+    }
+
+    #navbar .nav-link{
+        padding: 26px 25px 24px 25px;
+    }
+
+    #telaCaptura h4 {
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .container {
+        width: 100%;
+        max-width: calc(100vw - 60px);
+    }
+
+    #navbar .nav-link {
+        padding: 26px 20px 24px 20px;
+    }
+
+    #botao-chat {
+        height: 40px;
+        width: 40px;
+    }
+
+    #carrossel-solucoes .carousel-item .row {
+        margin-left: 70px;
+    }
+    
+}
+
+@media screen and (max-width: 880px) {
+    html {
+        font-size: 45%
+    }
+
+    section {
+        padding-top: 100px;
+    }
+
+    #telaInicial img {
+        height: 38rem;
+        float: none;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    #botao-chamada-navbar {
+        display: none;
+    }
+
+    #navegacao {
+        justify-content: flex-end;
+    }
+
+    #telaNossoObjetivo h3 {
+        margin-bottom: 15px;
+    }
+
+    .artigos {
+        grid-gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .artigo {
+        height: 130px;
+    }
+
+    .artigo span:nth-child(1) {
+        height: 20%;
+    }
+    
+    .artigo span:nth-child(2) {
+        display: none;
+    }
+    
+    .artigo span:nth-child(3) {
+        height: 60%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .artigo span:nth-child(4) {
+        height: 20%;
+    }
+
+    .artigo span h4 {
+        font-size: 2.2rem;
+    }
+
+    .artigo span p {
+        font-size: 1.7rem;
+    }
+
+    .artigo span a {
+        font-size: 1.7rem;
+    }
+
+    #telaSolucoes>div>h2 {
+        margin-bottom: 20px;
+    }
+
+    #carrossel-solucoes .carousel-item .row {
+        margin-left: 50px;
+    }
+    
+    .depoimento {
+        height: 31rem;
+    }
+
+    #controle button {
+        margin: 10px 20px;
+    }
+
+    #telaCaptura>div {
+        width: 50rem;
+        height: 60rem;
+        margin-top: 0px;
+    }
+
+    #telaCaptura h4 {
+        padding: 10px 0;
+        padding-bottom: 40px;
+    }
+
+    form {
+        font-size: 1.5rem;
+    }
+    
+    form input {
+        height: 35px;
+    }
+
+    form button{
+        margin-top: 0px;
+        height: 35px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+
+    #logo-navbar {
+        width: 100px;
+    }
+
+    #navbar .nav-link {
+        padding: 26px 17px 24px 17px;
+    }
+
+    #telaInicial img {
+        margin-top: 30px;
+        height: 38rem;
+    }
+
+    #telaInicial {
+        text-align: center;
+        background-position: bottom -200px center;
+        background-size: 60rem;
+    }
+
+    #telaInicial h1 {
+        font-size: 8rem
+    }
+
+    h2 {
+        font-size: 3.7rem
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    br {
+        display: none;
+    }
+
+    #telaInicial h1 br{
+        display: block;
+    }
+
+    #telaQuemSomos h3 {
+        line-height: 3rem;
+    }
+
+    #telaQuemSomos {
+        text-align: center;
+    }
+    
+    #telaQuemSomos img {
+        margin-top: 30px;
+        height: 50rem;
+        float: none;
+    }
+
+    #telaNossoObjetivo h2 {
+        font-size: 4.2rem;
+    }
+
+    #telaNossoObjetivo h3 {
+        padding: 10px;
+    }
+
+    #carrossel-solucoes .carousel-item .row {
+        margin-left: 0px;
+    }
+
+    #carrossel-solucoes .carousel-item .col-md-6 div, #carrossel-solucoes .carousel-item .col-md-5 div {
+        display: block;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        width: 70%;
+    }
+
+    #carrossel-solucoes .carousel-item h2, #carrossel-solucoes .carousel-item h3  {
+        text-align: center;
+    }
+
+    #carrossel-solucoes .carousel-item img {
+        height: 41rem;
+        right: 0;
+    }
+
+    #controle {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #carrossel-depoimentos {
+        margin-top: 50px;
+    }
+
+    #telaDepoimentos {
+        text-align: center;
+    }
+
+    #telaDepoimentos h3 {
+        line-height: 3rem;
+    }
+
+    #carrossel-depoimentos {
+        width: 60rem;
+        padding: 0 7rem;
+    }
+
+    .depoimento {
+        height: 32rem;
+    }
+
+    .depoimento img {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .depoimento p {
+        font-size: 1.8rem;
+    }
+
+    button>br {
+        display: block;
+    }
+
+    #area-carrossel {
+        margin-top: 30px;
+    }
+
+    #carrossel-cases {
+        width: 70rem;
+        height: 50rem;
+    }
+
+    .case {
+        display: table;
+    }
+
+    .case span {
+        display: block;
+        float: none;
+        height: 45%;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 4%;
+        border-radius: 15px 15px 3px 3px;
+        background-size: 100% auto;
+    }
+
+    #case-1, #case-2 {
+        background-size: 100% auto;
+    }
+
+    .case div {
+        display: block;
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .case h4 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .case h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    #logo-empresas {
+        margin-top: 30px;
+    }
+
+    #logo-empresas img {
+        height: 2.5rem;
+        padding: 0 10px;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    #telaCaptura>div {
+        width: 50rem;
+        height: 60rem;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    html {
+        font-size: 38%
+    }
+
+    html, body{
+	    scroll-snap-type: none;
+    }
+
+    section, footer {
+        scroll-snap-align: center;
+    }
+
+    #navbar .nav-link {
+        padding: 20px 13px 20px 13px;
+        border-bottom: 2px solid transparent;
+    }
+
+    #navbar {
+        padding-top: 22px;
+    }
+
+    #navbar.branco .nav-link.active, #navbar.preto .nav-link.active, #navbar.vermelho .nav-link.active {
+        border-bottom: 2px solid transparent;
+    }
+
+    .artigo span h4 {
+        font-size: 2.5rem;
+    }
+
+    .artigo span p {
+        font-size: 2rem;
+    }
+
+    .artigo span a {
+        font-size: 2rem;
+    }
+
+    #controle {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #controle button {
+        margin: 10px 10px;
+    }
+
+    .case h4{
+        margin-bottom: 10px;
+    }
+
+    .case h3{
+        margin-bottom: 15px;
+    }
+
+    #rodape p {
+        font-size: 2rem;
+    }
+
+    #telaCaptura h4 {
+        padding: 10px 0;
+        padding-bottom: 40px;
+    }
+
+    form {
+        font-size: 1.5rem;
+    }
+    
+    form input {
+        height: 30px;
+        border-radius: 3px;
+        margin-bottom: 15px;
+    }
+
+    form button{
+        border-radius: 3px;
+        height: 30px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 35%
+    }
+
+    h3 {
+        font-size: 2.7rem;
+    }
+
+    #telaInicial a {
+        font-size: 2rem;
+        display: inline-block;
+    }
+
+    #telaCaptura div {
+        padding: 25px;
+    }
+
+    #telaCaptura h4 {
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 32%
+    }
+
+    #telaInicial a{
+        padding: 9px 30px;
+    }
+
+    .case {
+        padding: 10px;
+    }
+
+    .case h3{
+        margin-bottom: 10px;
+    }
+
+    form input {
+        height: 25px;
+    }
+
+    form button{
+        height: 25px;
+        margin-top: 0px;
+    }
+}

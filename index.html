@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', '928138441272189');
+      fbq('track', 'PageView');
+
+    </script>
+    <noscript>
+    	<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=928138441272189&ev=PageView&noscript=1"/>
+   	</noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ1PJSRR8N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GJ1PJSRR8N');
+    </script>
+
+
+    <link rel="shortcut icon" href="util/img/isotipo.svg" >
+    <link href="css/main.css" rel="stylesheet">
+    <title>Impulse | Business Solution</title>
+  </head>
+
+  <body>
+    
+    <!-- BOTAO CHAT -->
+    <a type="submit" onclick="(function(){chat.toggle(); fbq('trackCustom', 'ClicouBotaoChat');})()" id="botao-chat"><img src="util/img/redes_sociais/chat.svg"></a>
+
+    <!-- SETA -->
+    <a  id="link-seta" href="#telaQuemSomos">
+      <svg id="seta" xmlns="http://www.w3.org/2000/svg" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+        <path d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+      </svg>
+    </a>
+
+    <!-- NAVBAR -->
+    <header id="navbar" class="navbar navbar-expand-sm branco">
+      <div class="container">
+        <a class="navbar-brand" href="#telaInicial"><img id="logo-navbar" src="util/img/logo-fundo-branco/logo_sem_tag.svg"></a>
+        <button id="botao-menu" onclick="changeMenuIcon()" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navegacao" aria-expanded="false" aria-label="Navegacao">
+          <svg id="simbolo-menu" xmlns="http://www.w3.org/2000/svg" class="bi bi-list" viewBox="0 0 16 16">
+            <path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </button>
+
+        <div id="navegacao" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" id="home" href="#telaInicial">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="quem-somos" href="#telaQuemSomos">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="solucoes" href="#telaSolucoes">Soluções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="cases" href="#telaCases" tabindex="-1">Cases</a>
+            </li>
+          </ul>
+        </div>
+        
+        <a class="botao-chamada" id="botao-chamada-navbar" onclick="chat.toggle()">Falar com um Especialista</a>
+      </div>
+    </header>
+
+    <!-- TELA INICIAL -->
+    <main>
+      <section id="telaInicial">
+        <div class="container">
+          <div class="row">
+            <div  class="col-md">
+              <div data-anime="left">
+                <h1>Impulsione <br>o seu negócio!</h1>
+                <h3>Você está pronto para aproximar sua empresa de seus clientes, <br>melhorando o atendimento a ponto de reduzir custos e aumentar vendas?</h3>
+                <a class="botao-chamada" href="#telaCaptura">Quero ter acesso a esses resultados!</a>
+              </div>  
+            </div>
+            <div class="col-md right-content" data-anime="right">
+              <img src="util/img/illustrations/foguete.svg" class="img-fluid"> 
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- QUEM SOMOS -->
+    <section id="telaQuemSomos">
+      <div class="container">
+        <div class="row">
+          <div  class="col-md">
+            <div data-anime="left">
+              <h2>Uma equipe engajada, <br>persistente e pronta para enfrentar<br><span class="destaqueFrase">qualquer desafio!</span></h2>
+              <h3>Nós da impulse temos em nosso DNA a inovação e estamos<br>sempre em busca de novas tecnologias para que consigamos<br>trazer sempre o melhor para você e seus clientes!</h3>
+            </div>
+          </div>
+          <div class="col-md" data-anime="right">
+            <img src="util/img/illustrations/Fotos.png" class="img-fluid"> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSSO OBJETIVO -->
+    <section id="telaNossoObjetivo">
+      <div class="container" data-anime="down">
+        <h2>Qual o nosso objetivo?</h2>
+        <h3>Nosso objetivo é fazer com que a sua empresa <b>NÃO</b> faça parte desses números:</h3>
+
+        <div class="artigos">
+          <div class="artigo">
+            <span><h4>Atividades não automatizadas</h4></span>
+            <span></span>
+            <span><p>Segundo relatório da MicKinsey & Company, 6 em cada 10 ocupações têm, pelo menos, 30% de suas funções compostas de atividades repetitivas, que poderiam ser automatizadas.</p></span>
+            <span><a href="https://www.mckinsey.com/featured-insights/future-of-work/jobs-lost-jobs-gained-what-the-future-of-work-will-mean-for-jobs-skills-and-wages/pt-br#" target='_blank'>Ver Mais</a></span>
+          </div>
+          <div class="artigo">
+            <span><h4>Clientes Insatisfeitos</h4></span>
+            <span></span>
+            <span><p>De acordo com a Harvard Business Review, 48% dos clientes insatisfeitos contam sobre seu mau atendimento a cerca de 10 pessoas</p></span>
+            <span><a href="https://hbr.org/2010/07/stop-trying-to-delight-your-customers" target='_blank'>Ver Mais</a></span>
+          </div>
+          <div class="artigo">
+            <span><h4>Clientes não voltam</h4></span>
+            <span></span>
+            <span><p>Um estudo da New Voice Media concluiu que 58% dos clientes nunca mais voltam a usar uma empresa depois de uma experiência negativa com ela</p></span>
+            <span><a href="https://www.vonage.com/resources/articles/customer-service-stats-mean-business/" target='_blank'>Ver Mais</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUÇÕES -->
+    <section id="telaSolucoes">
+      <div data-anime="left">
+
+        <h2>Nossas soluções para a sua Empresa</h2>
+        
+        <div id="carrossel-solucoes" class="carousel slide" data-bs-ride="carousel">
+
+          <div id="controle" class="carousel-indicators">
+            <button type="button" data-bs-target="#carrossel-solucoes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Atendimento<br>Múltiplo e Rápido</button>
+            <button type="button" data-bs-target="#carrossel-solucoes" data-bs-slide-to="1" aria-label="Slide 2">Atendimento<br>Automatizado</button>
+            <button type="button" data-bs-target="#carrossel-solucoes" data-bs-slide-to="2" aria-label="Slide 3">API</button>
+            <button type="button" data-bs-target="#carrossel-solucoes" data-bs-slide-to="3" aria-label="Slide 4">Campanha<br>Promocional</button>
+            <button type="button" data-bs-target="#carrossel-solucoes" data-bs-slide-to="4" aria-label="Slide 5">Gerenciamento</button>
+            <button type="button" data-bs-target="#carrossel-solucoes" data-bs-slide-to="5" aria-label="Slide 6">Captração e<br>Nutrição de Leads</button>
+          </div>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-5">
+                  <div>
+                    <h2>Atendimento Múltiplo e Rápido</h2>
+                    <h3>Esteja sempre disponível para o seu cliente, tenha diversos canais de atendimento centralizados em um só local e responda seu consumidor de forma ágil e eficiente!</h3>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img id="img-notebook" src="util/img/illustrations/notebook3.png">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-5">
+                  <div>
+                    <h2>Atendimento Automatizado</h2>
+                    <h3>Esteja sempre disponível para o seu cliente, tenha diversos canais de atendimento centralizados em um só local e responda seu consumidor de forma ágil e eficiente!</h3>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <img src="util/img/illustrations/celular-chatbot.png">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-5">
+                  <div>
+                    <h2>Integração com Sistemas Externos</h2>
+                    <h3>Tenha a possibilidade de conexões ou consultas com sistemas externos e deixe o seu sistema ainda mais inteligente!</h3>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="util/img/illustrations/pc-api.png">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-5">
+                  <div>
+                    <h2>Campanha Promocional</h2>
+                    <h3>Impulsione suas campanhas promocionais lançando notificação para sua base de clientes de forma rápida e automatizada.</h3>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="util/img/illustrations/celular-campanha-de-marketing2.png">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-5">
+                  <div>
+                    <h2>Gerenciamento</h2>
+                    <h3>Veja resultados, acompanhe seus atendentes e acesse relatórios de forma simples a te fazer melhorar cada vez mais com seus clientes.</h3>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="util/img/illustrations/pc-gerenciamento.png">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-5">
+                  <div>
+                    <h2>Captação e Nutrição de Leads</h2>
+                    <h3>Colha Possíveis clientes e ainda tenha a possibilidades de nutri-los com informações ou Campanhas de marketing.</h3>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="util/img/illustrations/pc-api.png">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CASES E RESULTADOS -->
+    <section id="telaCases">
+      <div class="container" data-anime="right">
+        
+        <h2>Já existem empresas tendo resultados positivos com essas soluções</h2>
+
+        <div id="area-carrossel">
+
+          <div id="carrossel-cases" class="carousel slide" data-bs-ride="carousel">
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-cases" data-bs-slide="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-chevron-left" viewBox="0 0 16 16" aria-hidden="true">
+                <path fill-rule="rgb(16,24,32);" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+              </svg>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="case">
+                  <span id="case-1"></span>
+                  <div>
+                    <h4>Fast Shop atinge 40% de conversão com SMS e ChatBot</h4>
+                    <h3>Por meio de um ChatBot de agendamento de entregas disparado a partir de SMS, a Fast Shop conseguiu atingir uma conversão de 40% de vendas.</h3>
+                    <h6>https://www.zenvia.com/cases/2/</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="case">
+                  <span id="case-2"></span>
+                  <div>
+                    <h4>Grupo Hermes Pardini otimizou relacionamento, comunicação e serviços a clientes</h4>
+                    <h3>Mais de 5 mil exames foram entregues de forma automatizada. A eficiência operacional da equipe de atendentes aumentou em 30%, ultrapassando a marca de 50 mil atendimentos humanos</h3>
+                    <h6>https://www.take.net/case/hermes-pardini/</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carrossel-cases" data-bs-slide="next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-chevron-right" viewBox="0 0 16 16" aria-hidden="true">
+                <path fill-rule="rgb(16,24,32);" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+        </div>
+        
+        <div id="logo-empresas">
+          <img src="util/img/cases/empresa1.png">
+          <img src="util/img/cases/empresa2.png">
+          <img src="util/img/cases/empresa3.png">
+          <img src="util/img/cases/empresa4.png">
+          <img src="util/img/cases/empresa6.png">
+          <img src="util/img/cases/empresa7.png">
+          <img src="util/img/cases/empresa8.png">
+          <img src="util/img/cases/empresa9.png">
+          <img src="util/img/cases/empresa10.png">
+          <img src="util/img/cases/empresa11.png">
+        </div>
+      
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="telaDepoimentos">
+      <div class="container" data-anime="left">
+        <div class="row">
+          <div class="col-md"> 
+            <div>
+              <h2>Nossa missão é o <span class="destaqueFrase">seu futuro!</span></h2>
+              <h3>Surgimos com o objetivo de aumentar a satisfação de seu cliente e<br>melhorar o relacionamento das pessoas com sua marca, buscando<br>a fidelização e o aumento na taxa de conversão.</h3>
+              <h3 id="frase-efeito"><b>Resultando na redução de custos e aumento de vendas.</b></h3>
+            </div>
+          </div>
+
+          <div class="col-md">
+
+            <div id="carrossel-depoimentos" class="carousel slide" data-bs-ride="carousel">
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-depoimentos" data-bs-slide="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-chevron-left" viewBox="0 0 16 16" aria-hidden="true">
+                  <path fill-rule="rgb(16,24,32);" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <div class="depoimento">
+                    <img src="util/img/cases/depoimento-BarbaraMiranda.jpg">
+                    <h5>Bárbara Miranda</h5>
+                    <h6>Coordenadora na Paris Filmes</h6>
+                    <p>“Conseguimos responder, em tempo real e com conteúdo bem pensado, o que talvez não seria possível sem a automatização.”</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="depoimento">
+                    <img src="util/img/cases/depoimento-NestorFelpi.jpg">
+                    <h5>Nestor Felpi</h5>
+                    <h6>Diretor da Natura</h6>
+                    <p>“Buscamos sempre o melhor contato com nossos clientes, e por isso o chatbot se mostrou relevante para gerar resultados”</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="depoimento">
+                    <img src="util/img/cases/depoimento-AlexandreMoreno.jpg">
+                    <h5>Alexandre Moreno</h5>
+                    <h6>Diretor de Serviços do Mercado Eletrônico</h6>
+                    <p>“Para que a experiência do usuário seja otimizada, precisamos estar disponíveis para o cliente na hora em que ele necessita. O atendimento via chatbot nos permitirá isso”</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#carrossel-depoimentos" data-bs-slide="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-chevron-right" viewBox="0 0 16 16" aria-hidden="true">
+                  <path fill-rule="rgb(16,24,32);" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PÁGINA DE CAPTURA -->
+    <section id="telaCaptura">
+      <div data-anime="down">
+
+        <h4>Deixe aqui seu contato e receba de forma exclusiva dicas e novidades da Impulse!</h4>
+
+        <form name="form-de-captura">
+          <input type="name" name="nome" placeholder="Nome" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="telefone" placeholder="Telefone" required>
+          <input type="text" name="nome-empresa" placeholder="Nome da Sua Empresa" required>
+
+          <button type="submit" onclick="disparaPixel()">Mudar o futuro da minha empresa!</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer id="rodape">
+      <div class="container" data-anime="top">
+        <span id="footer-logo">
+          <img src="util/img/logo-fundo-preto/logo_com_slogan.svg" class="img-fluid">
+        </span>
+
+        <div id="redes-sociais">
+          <a href="https://www.facebook.com/impulsebusiness1" target='_blank'><img src="util/img/redes_sociais/facebook.svg" class="rede-social img-fluid"></a>
+          <a href="https://www.instagram.com/impulsebusiness" target='_blank'><img  src="util/img/redes_sociais/instagram.svg" class="rede-social img-fluid"></a>
+          <a href="https://www.linkedin.com/company/impulsebusiness" target='_blank'><img src="util/img/redes_sociais/linkedin.svg" class="rede-social img-fluid"></a>
+          <a href="https://www.youtube.com/channel/UCyN51ZyYtkMs91hKm5KeCkg" target='_blank'><img src="util/img/redes_sociais/youtube.svg" class="rede-social img-fluid"></a>
+        </div>
+
+        <p>Todos os direitos reservados &#169 Impulse Soluções Empresariais | 2021</p>
+      </div>
+    </footer>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/carrosseis.js"></script>
+
+    <style>
+      .znv-chat:not(.znv-is-inline).znv-is-active .znv-chat-header {
+        border-radius: 0;
+      }
+
+      .znv-chat:not(.znv-is-inline).znv-is-active .znv-chat-container {
+        bottom: 12%;
+	      right: 4%;
+        box-shadow: 0px 5px 5px rgba(16, 24, 32, 0.15);
+        border: 1px solid rgba(16, 24, 32, 0.05);
+      }
+    </style>
+    <script src="https://static.zenvia.com/embed/js/zenvia-chat.min.js"></script>
+    <script>
+      var chat = new ZenviaChat('8af8687f5426a6f23ae1ee6ba6019f8b')
+      .embedded('buttonless')
+      .height('500px')
+      .build()
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/ca4c19d4-8f01-42fd-adf1-83c6fbafd73b-loader.js" ></script>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/pixel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,784 @@
+/*
+* @author André Medeiros
+* @version 0.1
+*/
+
+/* ------------------------------ NAVBAR ------------------------------*/
+
+#navbar {
+	min-height: 70px;
+	width: 100%;
+	padding: 0px;
+	z-index: 2;
+	position: fixed;
+	transition: 0.5s;
+    display: block;
+}
+
+#simbolo-menu {
+	width:20px;
+	height: 20px;
+}
+
+#logo-navbar {
+	width: 110px;
+}
+
+#botao-chamada-navbar {
+	font-size: 1.3rem;
+	padding: 10px 30px;
+}
+
+#navbar .nav-link{
+    padding: 24px 25px 22px 25px;
+}
+
+#navbar button {
+    border: none;
+	background: transparent;
+	box-shadow: none;
+    padding: 0px;
+    float: right;
+}
+
+ #simbolo-menu {
+	width:20px;
+	height: 20px;
+	transition: all 0.3s;
+}
+
+#navegacao {
+	justify-content: center;
+}
+
+/***********************************   NAVBAR CORES  */
+
+#navbar.branco .nav-link.active {
+	color: rgb(16, 24, 32);
+	border-bottom: 2px solid rgb(16, 24, 32);
+}
+
+#navbar.vermelho .nav-link.active {
+	color: rgb(229,225,230);
+	border-bottom: 2px solid rgb(229,225,230);
+}
+
+#navbar.preto .nav-link.active {
+	color: rgb(229,225,230);
+	border-bottom: 2px solid rgb(229,225,230);
+}
+
+#navbar.branco .nav-link{
+	color: #CAC2CC;
+}
+
+#navbar.preto .nav-link{
+	color: rgb(229,225,230, 0.5);
+}
+
+#navbar.vermelho .nav-link{
+	color: rgb(229,225,230, 0.7);
+}
+
+#navbar.branco .nav-link:hover{
+	color: rgb(16, 24, 32);
+}
+
+#navbar.preto .nav-link:hover{
+	color: rgb(229,225,230);
+}
+
+#navbar.vermelho .nav-link:hover{
+	color: rgb(229,225,230);
+}
+
+#navbar.branco #botao-chamada-navbar{
+	color: rgb(228,0,43);
+	border: 1px solid rgb(228,0,43);
+}
+
+#navbar.branco #botao-chamada-navbar:hover{
+	color: rgb(229,225,230);
+	background: rgb(228,0,43);
+}
+
+#navbar.preto #botao-chamada-navbar{
+	color: rgb(229,225,230);
+	border: 1px solid rgb(229,225,230);
+}
+
+#navbar.preto #botao-chamada-navbar:hover{
+	color: rgb(229,225,230);
+	background: rgb(228,0,43);
+	border: 1px solid rgb(228,0,43);
+}
+
+#navbar.vermelho #botao-chamada-navbar{
+	color: rgb(229,225,230);
+	border: 1px solid rgb(229,225,230);
+}
+
+#navbar.vermelho #botao-chamada-navbar:hover{
+	color: rgb(228,0,43);
+	background: rgb(229,225,230);
+}
+
+#navbar.branco {
+	background: rgb(229,225,230);
+	box-shadow: 0px 0px 25px rgba(16, 24, 32, 0.15);
+	color: rgb(16, 24, 32);
+}
+
+#navbar.preto {
+	background: rgb(16, 24, 32);
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+	color: rgb(229,225,230);
+}
+
+#navbar.vermelho {
+	background: rgb(228,0,43);
+	box-shadow: 0px 0px 25px rgba(16, 24, 32, 0.15);
+	color: rgb(229,225,230);
+}
+
+#navbar.branco #simbolo-menu>path {
+	fill: rgb(16,24,32);
+}
+
+#navbar.preto #simbolo-menu>path {
+	fill: rgb(229,225,230);
+}
+
+#navbar.vermelho #simbolo-menu>path {
+	fill: rgb(229,225,230);
+}
+
+/* ------------------------------ TELA INCIAL ----------------------------- */
+
+#telaInicial {
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+
+    background: rgb(229,225,230)
+                url("../util/img/pattern.svg") no-repeat;
+    
+    background-position: center right -50px;
+    background-size: 40rem;
+}
+
+#telaInicial .container{
+	display: block;
+}
+
+#telaInicial .col-md {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#telaInicial h1 {
+	line-height: 6.0rem;
+}
+
+#telaInicial h3 {
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+#telaInicial a {
+	padding: 11px 30px;
+	font-size: 1.7rem;
+}
+
+#telaInicial img {
+	height: 38rem;
+    float: right;
+}
+
+/* ------------------------------ TELA INCIAL ----------------------------- */
+
+#telaQuemSomos {
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+
+    background: rgb(229,225,230)
+                url("../util/img/illustrations/design.svg") no-repeat;
+    
+    background-position: center right -15rem;
+    background-size: 110rem;
+}
+
+#telaQuemSomos .container{
+	display: block;
+}
+
+#telaQuemSomos .col-md {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#telaQuemSomos h2 {
+	line-height: 3.5rem;
+}
+
+#telaQuemSomos h3 {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	line-height: 2.2rem;
+}
+
+#telaQuemSomos img {
+	height: 45rem;
+    float: right;
+}
+
+/* ------------------------------ NOSSO OBJETIVO ----------------------------- */
+
+#telaNossoObjetivo {
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	background: rgb(229,225,230)
+				url("../util/img/illustrations/foguete_marca.svg") no-repeat;
+
+	background-size: 65vh;
+	background-position: center left -15vw;
+}
+
+#telaNossoObjetivo h3 {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.artigos {
+	width: 90%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.artigo {
+	border-radius: 10px;
+	background: rgb(229,225,230);
+	box-shadow: 0px 5px 5px rgba(16, 24, 32, 0.15);
+	border: 1px solid rgba(16, 24, 32, 0.05);
+	height: 330px;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+
+.artigo:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 10px 6px rgba(16, 24, 32, 0.1);
+}
+
+.artigo span {
+	padding: 0px 10px;
+}
+
+.artigo:nth-child(1) span:nth-child(2){
+	background: url("../util/img/illustrations/atividades_nao_automatizadas.svg") no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+
+.artigo:nth-child(2) span:nth-child(2){
+	background: url("../util/img/illustrations/clientes_insatisfeitos.svg") no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+
+.artigo:nth-child(3) span:nth-child(2){
+	background: url("../util/img/illustrations/tempo-conversao.svg") no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+
+.artigo span:nth-child(1) {
+	height: 15%;
+	width: 100%;
+	border-bottom: 1px solid rgba(16, 24, 32, 0.05);
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+}
+
+.artigo span h4 {
+	font-size: 1.7rem;
+	margin: 0px;
+}
+
+.artigo span:nth-child(2) {
+	height:40%;
+	width: 100%;
+	display: block;
+}
+
+.artigo span:nth-child(3) {
+	height: 35%;
+	width: 98%;
+	display: block;
+}
+
+.artigo span:nth-child(4) {
+	height: 10%;
+	width: 100%;
+	border-top: 1px solid rgba(16, 24, 32, 0.05);
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+}
+
+.artigo span a {
+	text-decoration: none;
+	font-family: "Sansation Bold";
+	color: rgb(228, 0, 43);
+}
+
+/* ------------------------------ SOLUÇÕES ----------------------------- */
+
+#telaSolucoes {
+	background:rgb(228,0,43)
+				url("../util/img/pattern-vermelho-escuro.svg");
+	background-size: 300px;
+	background-attachment: fixed;
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+	padding-top: 60px;
+	overflow: hidden;
+}
+
+#telaSolucoes>div {
+	display: block;
+}
+
+#telaSolucoes>div>h2 {
+	font-size: 3rem;
+	text-align: center;
+	color: rgb(229,225,230);
+	margin-bottom: 40px;
+}
+
+/***************** CARROSSEL */
+
+#controle {
+	margin: 20px;
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+}
+
+.carousel-indicators{
+	position: relative;
+	text-indent: 0px;
+	z-index: 0 !important;
+}
+
+.carousel-indicators [data-bs-target] {
+	text-indent: 0px;
+}
+
+#controle button {
+	color: rgb(229,225,230);
+	line-height: 110%;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	background: none;
+	opacity: 0.5;
+	width: auto;
+	height: auto;
+	margin: 10px 30px;
+	transition: all 0.3s;
+}
+
+#controle button:hover {
+	opacity: 0.7;
+	transform: translateY(-2px);
+}
+
+#controle button.active {
+	opacity: 1;
+	transform: translateY(-7px);
+}
+
+#carrossel-solucoes {
+	width: 100%;
+	height: 410px;
+}
+
+#carrossel-solucoes .carousel-item .row {
+	margin-left: 100px;
+}
+
+#carrossel-solucoes .carousel-item .col-md-6, #carrossel-solucoes .carousel-item .col-md-5 {
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+}
+
+#carrossel-solucoes .carousel-item .col-md-6 div {
+	display: block;
+}
+
+#carrossel-solucoes .carousel-item h2 {
+	font-size: 3rem;
+	text-align: left;
+	color: rgb(229,225,230);
+}
+
+#carrossel-solucoes .carousel-item h3 {
+	font-size: 1.7rem;
+	text-align: left;
+	color: rgb(229,225,230);
+}
+
+#carrossel-solucoes .carousel-item img {
+	height: 38rem;
+	position: relative;
+}
+
+#img-notebook {
+	height: 35rem;
+}
+
+/* ------------------------------ CASES E RESULTADOS ----------------------------- */
+
+#telaCases {
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#telaCases .container {
+	display: block;
+}
+
+#telaCases h2 {
+	font-size: 3rem;
+}
+
+#area-carrossel {
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+#carrossel-cases {
+	width: 90rem;
+	height: 30rem;
+	padding: 0 5rem;
+}
+
+#carrossel-cases button {
+	width: 5rem;
+}
+
+.carousel-inner{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+#logo-empresas {
+	margin-top: 50px;
+}
+
+#logo-empresas img {
+	height: 30px;
+	padding: 0 30px;
+}
+
+/***************** CASES */
+
+.case {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	background: rgb(229,225,230);
+	border: 1px solid rgba(16, 24, 32, 0.15);
+	padding: 15px;
+}
+
+.case span {
+	border-radius: 15px 3px 3px 15px;
+	width: 48%;
+	height: 100%;
+	display: block;
+	float: left;
+	margin-right: 4%;
+}
+
+#case-1 {
+	background: url("../util/img/cases/case-fastshop.jpg") no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+
+#case-2 {
+	background: url("../util/img/cases/case-hermespardini.jpg") no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+
+.case div {
+	width: 48%;
+	height: 100%;
+	display: block;
+	float: left;
+	padding: 15px 0px;
+	text-align: left;
+}
+
+.case h4 {
+	color: rgb(228, 0, 43);
+	margin-bottom: 20px;
+}
+
+.case h3 {
+	margin-bottom: 20px;
+}
+
+.case h6 {
+	color: rgb(16, 24, 32, 0.5)
+}
+
+/* ------------------------------ DEPOIMENTOS ----------------------------- */
+
+#telaDepoimentos {
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+}
+
+#telaDepoimentos .col-md {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#telaDepoimentos h2 {
+	line-height: 3.5rem;
+}
+
+#telaDepoimentos h3 {
+	line-height: 2.2rem;
+}
+
+#telaDepoimentos h3#frase-efeito {
+	margin-top: 40px
+}
+
+/***************** CARROSSEL */
+
+#carrossel-depoimentos {
+	width: 50rem;
+	padding: 0 6rem;
+}
+
+#carrossel-depoimentos button {
+	width: 6rem;
+}
+
+/***************** DEPOIMENTO */
+
+.depoimento {
+	width: 100%;
+	height: 27rem;
+	background: rgb(229,225,230);
+	border-radius: 20px;
+	text-align: center;
+	color: rgb(16, 24, 32);
+	border: 1px solid rgba(16, 24, 32, 0.15);
+	padding: 10px;
+	overflow: hidden;
+}
+
+.depoimento img {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	margin-top: 20px;
+}
+
+.depoimento h5 {
+	font-weight: bold;
+	margin: 5px;
+}
+
+.depoimento h6 {
+	margin: 0px;
+	margin-bottom: 20px;
+	color: rgba(16, 24, 32, 0.5);
+}
+
+.depoimento p {
+	font-size: 1.5rem;
+}
+
+/* ------------------------------ PÁGINA DE CAPTURA ----------------------------- */
+
+#telaCaptura {
+	background:rgb(16, 24, 32)
+				url("../util/img/illustrations/design-pagina-captura.svg");
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+	color: rgb(229,225,230);
+}
+
+#telaCaptura>div {
+	width: 40rem;
+	height: 50rem;
+	background:rgb(16, 24, 32);
+	border-radius: 30px 7px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+	transition: all 0.4s;
+	margin-top: 60px;
+	padding: 40px;
+	display: block;
+}
+
+#telaCaptura h4 {
+	text-align: center;
+	font-family: "Sansation Bold";
+	color: rgb(229,225,230);
+	display: block;
+	padding: 10px 0px;
+	padding-bottom: 50px;
+}
+
+form {
+	font-size: 1.2rem;
+}
+
+form input {
+    background:rgb(16,24,32);
+    border: 1px solid rgb(228,0,43);
+	width: 100%;
+	height: 40px;
+	color: rgb(229,225,230);
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+form input::placeholder {
+    color: rgb(228,0,43);
+}
+
+form input:focus {
+    border-color:  rgb(228,0,43);
+	background: transparent;
+    box-shadow: none;
+}
+
+form button{
+    width: 100%;
+    background: rgb(228,0,43);
+    color: rgb(229,225,230);
+	border: none;
+	margin-top: 10px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+form button:hover {
+	background: rgb(223,0,38);
+}
+
+/* ------------------------------ RODAPÉ ----------------------------- */
+
+#rodape {
+	background: rgb(16,24,32);
+	bottom: 0px;
+	overflow-y: hidden;
+	padding-top: 120px;
+}
+
+#rodape .container {
+	display: block;
+}
+
+
+#rodape span{
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+}
+
+#rodape span img {
+	width: 40rem;
+}
+
+#redes-sociais {
+	margin: 170px 0px;
+	display: flex;
+  	align-items: center;
+	justify-content: center;
+}
+
+#redes-sociais a img {
+	padding: 1px;
+	height: 40px;
+	width: 40px;
+	margin: 7px;
+}
+
+#redes-sociais a:hover {
+	padding: 0px;
+	background: rgb(16,24,32);
+}
+
+#redes-sociais a:visited {
+	background: rgb(16,24,32);
+}
+
+#rodape p {
+	text-align: center;
+	color: rgb(229,225,230);
+	bottom: 0px;
+}
+
+/* ------------------------------ ANIMAÇÃO ----------------------------- */
+
+[data-anime] {
+	opacity: 0;
+	transition: .3s;
+}
+
+[data-anime="left"] {
+	transform: translate3d(-50px,0,0);
+}
+
+
+[data-anime="right"] {
+	transform: translate3d(50px,0,0);
+}
+
+[data-anime="down"] {
+	transform: translate3d(0, 50px,0);
+}
+
+[data-anime="top"] {
+	transform: translate3d(0, -50px, 0);
+}
+
+.animate {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
