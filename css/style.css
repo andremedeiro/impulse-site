@@ -758,7 +758,7 @@ form button:hover {
 
 [data-anime] {
 	opacity: 0;
-	transition: .3s;
+	transition:s;
 }
 
 [data-anime="left"] {
