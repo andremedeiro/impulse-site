@@ -384,12 +384,12 @@
         width: 50%;
         margin: auto;
         margin-bottom: 20px;
+        display: none;
     }
 
     #controle button {
         margin: 10px 10px;
     }
-
     .case h4{
         margin-bottom: 10px;
     }
