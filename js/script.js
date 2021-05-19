@@ -58,8 +58,6 @@ window.addEventListener('scroll', function() {
         linkSeta.children[0].classList.add("bi-chevron-compact-down");
         changeNavbar("preto");
     }
-
-    console.log(value);
 });
 
 // MUDA COR NAVBAR
@@ -199,7 +197,6 @@ function animeScroll () {
         } else {
             element.classList.remove(animate);
         }
-        console.log(element.offsetTop)
     })
 }
 animeScroll()
