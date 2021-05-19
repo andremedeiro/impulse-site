@@ -390,6 +390,11 @@
     #controle button {
         margin: 10px 10px;
     }
+
+    .carousel-control-prev, .carousel-control-next {
+        display: inline;
+    }
+    
     .case h4{
         margin-bottom: 10px;
     }
