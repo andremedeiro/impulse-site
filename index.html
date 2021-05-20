@@ -280,7 +280,7 @@
           <div id="carrossel-cases" class="carousel slide" data-bs-ride="carousel">
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-cases" data-bs-slide="prev">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-chevron-left" viewBox="0 0 16 16" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="bi bi-chevron-left" viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="rgb(16,24,32);" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
               </svg>
               <span class="visually-hidden">Previous</span>
@@ -311,7 +311,7 @@
             </div>
 
             <button class="carousel-control-next" type="button" data-bs-target="#carrossel-cases" data-bs-slide="next">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-chevron-right" viewBox="0 0 16 16" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="bi bi-chevron-right" viewBox="0 0 16 16" aria-hidden="true">
                 <path fill-rule="rgb(16,24,32);" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
               </svg>
               <span class="visually-hidden">Next</span>
@@ -353,7 +353,7 @@
             <div id="carrossel-depoimentos" class="carousel slide" data-bs-ride="carousel">
 
               <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-depoimentos" data-bs-slide="prev">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-chevron-left" viewBox="0 0 16 16" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="bi bi-chevron-left" viewBox="0 0 16 16" aria-hidden="true">
                   <path fill-rule="rgb(16,24,32);" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                 </svg>
                 <span class="visually-hidden">Previous</span>
@@ -390,7 +390,7 @@
               </div>
 
               <button class="carousel-control-next" type="button" data-bs-target="#carrossel-depoimentos" data-bs-slide="next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-chevron-right" viewBox="0 0 16 16" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" class="bi bi-chevron-right" viewBox="0 0 16 16" aria-hidden="true">
                   <path fill-rule="rgb(16,24,32);" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                 </svg>
                 <span class="visually-hidden">Next</span>
@@ -413,9 +413,10 @@
           <input type="name" name="nome" placeholder="Nome" required>
           <input type="email" name="email" placeholder="Email" required>
           <input type="tel" name="telefone" placeholder="Telefone" required>
-          <input type="text" name="nome-empresa" placeholder="Nome da Sua Empresa" required>
+          <input type="text" name="nome-empresa" placeholder="Nome da Sua Empresa">
+          <input type="text" name="cargo" style="display:none;">
 
-          <button type="submit" onclick="disparaPixel()">Mudar o futuro da minha empresa!</button>
+          <button type="button" onclick="(function(){disparaPixel(); submitForm();})()">Mudar o futuro da minha empresa!</button>
         </form>
       </div>
     </section>
@@ -466,9 +467,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/ca4c19d4-8f01-42fd-adf1-83c6fbafd73b-loader.js" ></script>
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/pixel.js"></script>
   </body>
 </html>

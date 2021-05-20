@@ -129,7 +129,6 @@
 
     #telaCaptura>div {
         width: 50rem;
-        height: 60rem;
         margin-top: 0px;
     }
 
@@ -336,7 +335,6 @@
 
     #telaCaptura>div {
         width: 50rem;
-        height: 60rem;
         margin-top: 0px;
     }
 }
@@ -408,6 +406,10 @@
         margin-bottom: 15px;
     }
 
+    .depoimento h6 {
+        margin-bottom: 15px;
+    }
+
     #rodape p {
         font-size: 2rem;
     }
@@ -446,6 +448,16 @@
     #telaInicial a {
         font-size: 2rem;
         display: inline-block;
+    }
+
+    .depoimento img {
+        width: 40px;
+        height: 40px;
+        margin-top: 5px;
+    }
+
+    .depoimento h6 {
+        margin-bottom: 10px;
     }
 
     #telaCaptura div {
