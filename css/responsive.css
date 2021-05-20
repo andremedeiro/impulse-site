@@ -392,7 +392,12 @@
     }
 
     .carousel-control-prev, .carousel-control-next {
-        display: inline;
+        display: inline;    
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 4rem;
+        height: 4rem;
     }
     
     .case h4{
