@@ -389,13 +389,13 @@
         margin: 10px 10px;
     }
 
-    .carousel-control-prev, .carousel-control-next {
-        display: inline;    
+    .hide {
+        display: inline;
     }
 
-    .carousel-control-next-icon, .carousel-control-prev-icon {
-        width: 4rem;
-        height: 4rem;
+    #tela-solucoes .carousel-control-next-icon, #tela-solucoes .carousel-control-prev-icon {
+        width: 15px;
+        height: 15px;
     }
     
     .case h4{

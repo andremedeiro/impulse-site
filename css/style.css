@@ -412,7 +412,7 @@
 	transform: translateY(-7px);
 }
 
-.carousel-control-prev, .carousel-control-next {
+.hide {
 	display: none;
 }
 
