@@ -190,7 +190,7 @@ const target = document.querySelectorAll('[data-anime]');
 const animate = 'animate';
 
 function animeScroll () {
-    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 3);
+    const windowTop = window.pageYOffset + ((window.innerHeight * 2) / 3);
     target.forEach(function (element) {
         if((windowTop) > element.offsetTop) {
             element.classList.add(animate);
@@ -201,4 +201,4 @@ function animeScroll () {
 }
 animeScroll()
 
-window.addEventListener('scroll', debounce(animeScroll, 200))
+window.addEventListener('scroll', debounce(animeScroll, 10))
