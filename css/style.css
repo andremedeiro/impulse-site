@@ -298,7 +298,7 @@
 }
 
 .artigo:nth-child(3) span:nth-child(2){
-	background: url("../util/img/illustrations/tempo-conversao.svg") no-repeat;
+	background: url("../util/img/illustrations/clientes-nao-voltam.svg") no-repeat;
 	background-size: auto 100%;
 	background-position: center;
 }
@@ -326,6 +326,7 @@
 .artigo span:nth-child(3) {
 	height: 35%;
 	width: 98%;
+	padding-top: 10px;
 	display: block;
 }
 
