@@ -1,6 +1,5 @@
 // AO CARREGAR A PÁGINA FAZ COM QUE VÁ PARA O TOPO
-smoothScrollTo(document.offsetTop, 0, 200);
-
+document.addEventListener('DOMContentLoaded', smoothScrollTo(document.offsetTop, 0, 200), false);
 // LINKS NAVBAR E SETA
 const doc = document.documentElement;
 
