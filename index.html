@@ -486,30 +486,27 @@
       }
       </script>
       <script>
-        if (document.addEventListener) {
-            document.addEventListener("keydown", bloquearSource);
-        } else { //Versões antigas do IE
-            document.attachEvent("onkeydown", bloquearSource);
-        }
+        window.addEventListener("keydown", ev => {
+        switch( true ) {
+        /* Previne F12 */
+        case ev.keyCode === 123:
         
-        function bloquearSource(e) {
-            e = e || window.event;
+        /* Previne Ctrl + Shift +  */
+        case ev.ctrlKey && ev.shiftKey && event.keyCode == 74:
         
-            var code = e.which || e.keyCode;
-        
-            if (
-                e.ctrlKey &&
-                (code == 83 || code == 85) //83 = S, 85 = U
-            ) {
-                if (e.preventDefault) {
-                    e.preventDefault();
-                } else {
-                    e.returnValue = false;
-                }
-        
-                return false;
-            }
-        }
+        /* Previne Ctrl + U */
+        case ev.ctrlKey && ev.keyCode == 85:
+          console.log("Tecla bloqueada");
+          ev.preventDefault();
+          return false;
+      }
+    })
+
+        /* Previne clique direito do mouse */
+        window.addEventListener("contextmenu", ev => {
+          ev.preventDefault();
+          return false;
+        });
         </script>
   </body>
 </html>
