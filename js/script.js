@@ -1,17 +1,9 @@
-// SCRIPT DO CHAT
-
-var chat = new ZenviaChat('8af8687f5426a6f23ae1ee6ba6019f8b')
-.embedded('buttonless')
-.height('500px')
-.build()
-
 var dispara = true;
 
 document.querySelector("#botao-chat").addEventListener("click", function() {
     if(dispara) {
         fbq('trackCustom', 'ClicouBotaoChat');
     }
-    chat.toggle();
     dispara = false;
 })
 
