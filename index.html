@@ -45,7 +45,7 @@
   <body>
     
     <!-- BOTAO CHAT -->
-    <a type="submit" onclick="(function(){chat.toggle(); fbq('trackCustom', 'ClicouBotaoChat');})()" id="botao-chat"><img src="util/img/redes_sociais/chat.svg"></a>
+    <a type="submit" id="botao-chat"><img src="util/img/redes_sociais/chat.svg"></a>
 
     <!-- SETA -->
     <a id="link-seta" href="#telaQuemSomos">
@@ -416,7 +416,7 @@
           <input type="text" name="nome-empresa" placeholder="Nome da Sua Empresa">
           <input type="text" name="cargo" style="display:none;">
 
-          <button type="submit" onclick="(function(){disparaPixel(); submitForm();})()">Mudar o futuro da minha empresa!</button>
+          <button type="submit">Mudar o futuro da minha empresa!</button>
         </form>
       </div>
     </section>
@@ -444,7 +444,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/carrosseis.js"></script>
-
     <style>
       .znv-chat:not(.znv-is-inline).znv-is-active .znv-chat-header {
         border-radius: 0;
@@ -458,13 +457,6 @@
       }
     </style>
     <script src="https://static.zenvia.com/embed/js/zenvia-chat.min.js"></script>
-    <script>
-      var chat = new ZenviaChat('8af8687f5426a6f23ae1ee6ba6019f8b')
-      .embedded('buttonless')
-      .height('500px')
-      .build()
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     <script src="./js/jquery-3.1.1.min.js"></script>

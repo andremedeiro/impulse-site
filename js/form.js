@@ -1,5 +1,14 @@
 const inputs = document.querySelectorAll("input");
 
+var dispara = true;
+document.querySelector("form button").addEventListener("click", function(){
+    if (dispara) {
+        disparaPixel();
+    }
+    submitForm();
+    dispara = false;
+});
+
 inputs[3].addEventListener('keyup', function() {
     if (inputs[3].value.trim().length != 0 ){
         inputs[4].style.display = "block";
