@@ -508,5 +508,33 @@
           return false;
         });
         </script>
+
+        <script>
+          window.onload = function() {
+          
+            document.onkeydown = eventHandler;
+            document.oncontextmenu = function() { return false; }
+            document.onselectionchange = function() { return false; }
+            document.onselectstart = function() {return false;}
+                
+            function eventHandler() {
+          
+                if (window.event.shiftKey == true) {
+                  return false;
+                } else if (window.event.ctrlKey == true) {
+                  return false;
+                } else if (window.event.altKey == true) {
+                  return false;
+                } else {
+                  var key = e.keyCode || e.which;
+                  if(key>=112 && key<=123 && !(key==114 || key==116 || key==122)) {
+                      return false;
+                  }
+                }
+          
+            }
+          
+        }
+        </script>
   </body>
 </html>
