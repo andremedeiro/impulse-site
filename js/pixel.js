@@ -9,7 +9,6 @@ linksNavbar.forEach(item => {
 });
 
 // VERIFICA CLICK BOTÃO NAVBAR
-
 document.querySelector("#botao-chamada-navbar").addEventListener('click', fbq('trackCustom', 'ClicouFalarEspecialista'));
 
 // VERIFICA CLICK EM BOTAO DE CHAMADA
