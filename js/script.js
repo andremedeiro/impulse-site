@@ -14,6 +14,7 @@ const doc = document.documentElement;
 
 window.addEventListener('scroll', function() {
     var linkSeta = document.querySelector("#link-seta");
+    var seta = document.querySelector("#seta");
     var value = parseInt(100 * doc.scrollTop / (doc.scrollHeight - doc.clientHeight));
 
 	if (value < 14) {
@@ -43,9 +44,7 @@ window.addEventListener('scroll', function() {
         changeLink("cases");
         linkSeta.href = "#telaDepoimentos";
         linkSeta.children[0].children[0].style.fill = "rgba(16, 24, 32, 0.3)";
-        linkSeta.children[0].classList.remove("bi-chevron-compact-down");
-        linkSeta.children[0].children[0].setAttribute("d","M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z");
-        linkSeta.children[0].classList.add("bi-chevron-compact-up");
+        seta.style.webkitTransform = "rotate(0deg)";
         changeNavbar("branco");
     }
 
@@ -64,9 +63,7 @@ window.addEventListener('scroll', function() {
 
     if (value > 85) {
         linkSeta.href = "#telaInicial";
-        linkSeta.children[0].classList.remove("bi-chevron-compact-up");
-        linkSeta.children[0].children[0].setAttribute("d","M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z");
-        linkSeta.children[0].classList.add("bi-chevron-compact-down");
+        seta.style.webkitTransform = "rotate(180deg)";
         changeNavbar("preto");
     }
 });

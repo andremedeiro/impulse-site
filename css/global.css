@@ -119,6 +119,25 @@ src: url("../util/fonts/sansation_light-webfont.woff") format("woff"),
 url("../util/fonts/sansation_light-demo.html") format("html");
 }
 
+/* ------------------------------ SCROLL BAR ----------------------------- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(229,225,230);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(228,0,43);
+    border-radius: 10px; 
+    border: 2px solid rgb(229,225,230);
+}
+
 /* ------------------------------ BOTÃO CHAT ----------------------------- */
 
 #botao-chat {
@@ -156,6 +175,7 @@ url("../util/fonts/sansation_light-demo.html") format("html");
 	animation-delay: 15s;
 	animation-duration: 1.5s;
 	animation-iteration-count: infinite;
+	transition: 0.3s;
 }
 
 #seta>path {

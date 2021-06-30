@@ -705,6 +705,13 @@ form button:hover {
 	background: rgb(223,0,38);
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: rgb(229,225,230) !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgb(16,24,32) inset !important;
+}
+
 /* ------------------------------ RODAPÉ ----------------------------- */
 
 #rodape {

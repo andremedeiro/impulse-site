@@ -427,7 +427,7 @@
           <input type="text" name="nome-empresa" placeholder="Nome da Sua Empresa">
           <input type="text" name="cargo" style="display:none;">
 
-          <button type="submit">Mudar o futuro da minha empresa!</button>
+          <button type="button">Mudar o futuro da minha empresa!</button>
         </form>
       </div>
     </section>
@@ -476,71 +476,8 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    <script src="js/script_obs.js"></script>
-    <script src="js/form_obs.js"></script>
-    <script src="js/pixel_obs.js"></script>
-    <script>
-      if (document.addEventListener) {
-          document.addEventListener("contextmenu", function(e) {
-              e.preventDefault();
-              return false;
-          });
-      } else { //Versões antigas do IE
-          document.attachEvent("oncontextmenu", function(e) {
-              e = e || window.event;
-              e.returnValue = false;
-              return false;
-          });
-      }
-      </script>
-      <script>
-        window.addEventListener("keydown", ev => {
-        switch( true ) {
-        /* Previne F12 */
-        case ev.keyCode === 123:
-        
-        /* Previne Ctrl + Shift +  */
-        case ev.ctrlKey && ev.shiftKey && event.keyCode == 74:
-        
-        /* Previne Ctrl + U */
-        case ev.ctrlKey && ev.keyCode == 85:
-          console.log("Tecla bloqueada");
-          ev.preventDefault();
-          return false;
-      }
-    })
-
-        /* Previne clique direito do mouse */
-        window.addEventListener("contextmenu", ev => {
-          ev.preventDefault();
-          return false;
-        });
-        </script>
-
-<script>
-  window.onload = function() {
-  
-    document.onkeydown = eventHandler;
-    document.oncontextmenu = function() { return false; }
-    document.onselectionchange = function() { return false; }
-    document.onselectstart = function() {return false;}
-        
-    function eventHandler() {
-  
-        if (window.event.ctrlKey == true) {
-          return false;
-        } else if (window.event.altKey == true) {
-          return false;
-        } else {
-          var key = e.keyCode || e.which;
-          if(key>=112 && key<=123 && !(key==114 || key==116 || key==122)) {
-              return false;
-          }
-        }
-  
-    }
-  
-}
-</script>
+    <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/pixel.js"></script>
   </body>
 </html>
