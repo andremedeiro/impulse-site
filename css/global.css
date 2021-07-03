@@ -100,6 +100,35 @@ p {
 	color: rgb(16, 24, 32);
 }
 
+.alert {
+	padding: 15px 25px 15px 25px;
+	background: rgb(16, 24, 32);
+	border-right: 5px solid rgb(228,0,43);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+	position: fixed;
+	right: 0;
+	top: -100px;
+	margin: 10px 10px 0 0;
+	z-index: 10;
+	overflow: hidden;
+	border-radius: 3px;
+	transition: 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.alert h4{
+	margin-top: 5px;
+	font-family: "Sansation Bold";
+	color: rgb(229,225,230);
+}
+
+.alert img {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
 
 @font-face {
 font-family: "Sansation Regular";

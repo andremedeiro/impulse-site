@@ -1,12 +1,28 @@
 const inputs = document.querySelectorAll("input");
+const alert = document.querySelector(".alert");
 
 var dispara = true;
+var temVazio = false;
 document.querySelector("form button").addEventListener("click", function(){
     if (dispara) {
         disparaPixel();
+        dispara = false;
     }
-    submitForm();
-    dispara = false;
+
+    temVazio = false;
+    
+    for(var i = 0; i < 3; i++ ){
+        if(inputs[i].value.trim().length == 0) {
+            temVazio = true;
+        }
+    }
+
+    if(temVazio) {
+        alert.style.top = "0px";
+        setTimeout(() => {alert.style.top = "-100px"}, 1500);
+    } else {
+        submitForm();
+    }
 });
 
 inputs[3].addEventListener('keyup', function() {
@@ -70,7 +86,6 @@ function callAPI(query) {
         inputs.forEach(input => {
             input.value = '';
         })
-        
-        smoothScrollTo(document.offsetTop, 0, 200)
+        smoothScrollTo(document.offsetTop, 0, 200);
     }
 }
