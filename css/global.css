@@ -5,9 +5,12 @@
 
 /* ------------------------------ GLOBAL ------------------------------*/
 
-
 html {
 	font-size: 62.5%;
+	--branco: rgb(229,225,230);
+	--vermelho: rgb(228,0,43);
+	--preto: rgb(16,24,32);
+	--cinza: rgba(16, 24, 32, 0.7);
 }
 
 html, body{
@@ -209,4 +212,12 @@ url("../util/fonts/sansation_light-demo.html") format("html");
 
 #seta>path {
 	fill: rgba(16, 24, 32, 0.3);
+}
+
+::-moz-selection { /* Code for Firefox */
+	background: rgba(8, 16, 24, 0.3);
+}
+  
+::selection {
+	background: rgba(8, 16, 24, 0.3);
 }
