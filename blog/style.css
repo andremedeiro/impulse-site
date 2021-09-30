@@ -220,6 +220,7 @@ section, footer {
     border: 1px solid var(--vermelho);
     opacity: 1;
     width: 15vw;
+    color: var(--vermelho);
 }
 
 .capa h4 {
