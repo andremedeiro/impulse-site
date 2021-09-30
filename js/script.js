@@ -120,7 +120,7 @@ function changeMenuIcon() {
 
 // SCROLL COM LINK
 
-const linkItems = document.querySelectorAll(".nav-link, #telaInicial a, #logo-navbar, .navbar-brand");
+const linkItems = document.querySelectorAll(".nav-link.scroll, #telaInicial a, #logo-navbar, .navbar-brand");
 
 linkItems.forEach(item => {
     item.addEventListener('click', scrollToIdOnClink);

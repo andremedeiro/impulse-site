@@ -153,21 +153,23 @@ url("../util/fonts/sansation_light-demo.html") format("html");
 
 /* ------------------------------ SCROLL BAR ----------------------------- */
 
-/* width */
-::-webkit-scrollbar {
-    width: 12px;
-}
-  
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(229,225,230);
-}
+@media screen and (min-width: 575px) {
+	/* width */
+	::-webkit-scrollbar {
+		width: 12px;
+	}
+	
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: rgb(229,225,230);
+	}
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(228,0,43);
-    border-radius: 10px; 
-    border: 2px solid rgb(229,225,230);
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: rgb(228,0,43);
+		border-radius: 10px; 
+		border: 2px solid rgb(229,225,230);
+	}
 }
 
 /* ------------------------------ BOTÃO CHAT ----------------------------- */
