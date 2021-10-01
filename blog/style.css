@@ -180,6 +180,12 @@ section, footer {
     margin: auto;
 }
 
+@media screen and (max-width: 900px) {
+    .blog {
+        width: 90%;
+    }
+}
+
 .tab {
     display: inline-block;
     width: 2vw;
@@ -239,9 +245,12 @@ section, footer {
 }
 
 .imagem img {
-    width: 100%;
+    width: auto;
+    height: auto;
     object-fit: cover;
     margin: 0 !important;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(16, 24, 32, 0.05);
 }
 
 /* ----------------------------- LINK PEQUENO -----------------------------*/
@@ -311,6 +320,29 @@ section, footer {
     margin-bottom: 50px !important;
 }
 
+/* ----------------------------- SUMÁRIO -----------------------------*/
+
+.sumario {
+    box-shadow: 0 0 10px rgba(16, 24, 32, 0.05);
+    border: 3px;
+    width: max-content;
+}
+
+.sumario ul {
+    list-style-type: none;
+}
+
+.sumario li a {
+    padding: 10px !important;
+    display: inline-block;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.sumario li a:hover {
+    background: rgba(16, 24, 32, 0.05);
+}
+
 /* ----------------------------- CITAÇÃO -----------------------------*/
 
 .citacao {
@@ -335,18 +367,18 @@ section, footer {
 
 /* ----------------------------- TÓPICOS -----------------------------*/
 
-ul {
+.topicos {
     list-style-type: square;
     margin-left: 2vw;
 }
 
-li::marker {
+.topicos li::marker {
     content: "▪    ";
     color: var(--vermelho);
     font-size: 2rem;
 }
 
-li {
+.topicos li {
     font-family: "Sansation Regular";
     font-size: 1.7rem;
 }
