@@ -237,20 +237,20 @@ section, footer {
 /* ----------------------------- IMAGEM -----------------------------*/
 
 .imagem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: max-content;
-    margin: 50px 0;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    height: auto !important;
 }
 
 .imagem img {
-    width: auto;
-    height: auto;
-    object-fit: cover;
-    margin: 0 !important;
     border-radius: 5px;
+    width: 100%;
+    object-fit: cover;
     box-shadow: 0 0 5px rgba(16, 24, 32, 0.05);
+    margin: auto !important;
 }
 
 /* ----------------------------- LINK PEQUENO -----------------------------*/
